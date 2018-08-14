@@ -3,8 +3,8 @@ navbar-links:
     Github: https://github.com/twoyao/beautiful-hexo
     About: /about/
 
-avatar: /hexo.png
-favicon: /hexo.png
+avatar: /img/avartar.jpg
+favicon: /img/favicon.ico
 
 header:
     title: "Beautiful Hexo"
