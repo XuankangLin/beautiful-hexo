@@ -1,7 +1,7 @@
 navbar-links:
+    About: /About-Me/
     Archive: /archives
-    Github: https://github.com/twoyao/beautiful-hexo
-    About: /about/
+    Tags: /tags
 
 avatar: /img/avartar.jpg
 favicon: /img/favicon.ico
