@@ -30,11 +30,6 @@ highlight:
   style_path: "/css/highlight.css"
 
 footer:
-  rss:
-    link: '/atom.xml'
-    title: RSS
-    icon: fa-rss
-    enable: true
   facebook:
     link: # your link e.g. https://...
     title: Facebook
@@ -74,6 +69,11 @@ footer:
     link: 'mailto:xuankang.lin@gmail.com'
     title: Email me
     icon: fa-envelope
+    enable: true
+  rss:
+    link: '/atom.xml'
+    title: RSS
+    icon: fa-rss
     enable: true
   linkin:
     link: # your link here e.g. http...
