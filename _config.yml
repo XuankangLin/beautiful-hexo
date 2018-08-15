@@ -41,19 +41,34 @@ footer:
     icon: fa-facebook
     enable: false
   weibo:
-    link: 'http://weibo.com/andriylin/'
+    link: 'https://weibo.com/andriylin/'
     title: Weibo
     icon: fa-weibo
-    enable: true
-  github:
-    link: 'https://github.com/AndriyLin'
-    title: GitHub
-    icon: fa-github
     enable: true
   twitter:
     link: 'https://twitter.com/AndriyLin'
     title: Twitter
     icon: fa-twitter
+    enable: true
+  instagram:
+    link: 'https://www.instagram.com/verified_andriy/'
+    title: Instagram
+    icon: fa-instagram
+    enable: true
+  douban:
+    link: 'https://www.douban.com/people/andriylin/'
+    title: Douban
+    icon: fa-douban
+    enable: true
+  goodreads:
+    link: 'https://www.goodreads.com/xuankanglin'
+    title: Goodreads
+    icon: fa-goodreads
+    enable: true
+  github:
+    link: 'https://github.com/AndriyLin'
+    title: GitHub
+    icon: fa-github
     enable: true
   mail:
     link: 'mailto:xuankang.lin@gmail.com'
