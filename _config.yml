@@ -1,14 +1,13 @@
 navbar-links:
     About: /About-Me/
     Archive: /archives
-    Tags: /tags
 
 avatar: /img/avartar.jpg
 favicon: /img/favicon.png
 
 header:
     title: "Xuankang Lin"
-    motto: "Informal reasoning can hide serious bugs. -- Various Artists"
+    motto: "See the world as it is, and love it."
 
     # bigimgs:
     #     - src: /bigimgs/01.jpg
@@ -30,25 +29,30 @@ highlight:
   style_path: "/css/highlight.css"
 
 footer:
-  facebook:
-    link: # your link e.g. https://...
-    title: Facebook
-    icon: fa-facebook
-    enable: false
+  rss:
+    link: '/atom.xml'
+    title: RSS
+    icon: fa-rss
+    enable: true
+  mail:
+    link: 'mailto:xuankang.lin@gmail.com'
+    title: Email me
+    icon: fa-envelope
+    enable: true
+  linkedin:
+    link: 'https://www.linkedin.com/in/xuankanglin/'
+    title: LinkedIn
+    icon: fa-linkedin
+    enable: true
+  github:
+    link: 'https://github.com/XuankangLin'
+    title: GitHub
+    icon: fa-github
+    enable: true
   weibo:
     link: 'https://weibo.com/andriylin/'
     title: Weibo
     icon: fa-weibo
-    enable: true
-  twitter:
-    link: 'https://twitter.com/AndriyLin'
-    title: Twitter
-    icon: fa-twitter
-    enable: true
-  instagram:
-    link: 'https://www.instagram.com/verified_andriy/'
-    title: Instagram
-    icon: fa-instagram
     enable: true
   douban:
     link: 'https://www.douban.com/people/andriylin/'
@@ -60,25 +64,20 @@ footer:
     title: Goodreads
     icon: fa-goodreads
     enable: true
-  github:
-    link: 'https://github.com/AndriyLin'
-    title: GitHub
-    icon: fa-github
-    enable: true
-  mail:
-    link: 'mailto:xuankang.lin@gmail.com'
-    title: Email me
-    icon: fa-envelope
-    enable: true
-  rss:
-    link: '/atom.xml'
-    title: RSS
-    icon: fa-rss
-    enable: true
-  linkin:
-    link: # your link here e.g. http...
-    title: LinkedIn
-    icon: fa-linkedin
+  facebook:
+    link: # your link e.g. https://...
+    title: Facebook
+    icon: fa-facebook
+    enable: false
+  twitter:
+    link: 'https://twitter.com/XuankangLin'
+    title: Twitter
+    icon: fa-twitter
+    enable: false
+  instagram:
+    link: 'https://www.instagram.com/verified_andriy/'
+    title: Instagram
+    icon: fa-instagram
     enable: false
   stackoverflow:
     link: # your link here e.g. http...
