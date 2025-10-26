@@ -10,10 +10,10 @@ block header
                     span.page-subheading!= page.subtitle
 
 block content
-    .container
+    main.container
         .row
             .col-lg-8.offset-lg-2.col-md-10.offset-md-1
-                article(role="main", class="blog-post")
+                article.blog-post
                     != page.content
 
                 include partial/comment

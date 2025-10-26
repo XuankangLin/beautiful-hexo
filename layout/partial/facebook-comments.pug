@@ -7,12 +7,29 @@ script.
     var fbc_url_parts = window.location.href.split("?");
     var fbc_url = fbc_url_parts[0];
     (function () {
-        var fbc = document.createElement('script');	
+        var fbc = document.createElement('script');
         fbc.type = 'text/javascript';
         fbc.async = true;
         fbc.src = "//connect.facebook.net/#{theme.comment.lang}/sdk.js#xfbml=1&version=v2.9";
-        (document.head || d.body ).appendChild(fbc);
+        (document.head || document.body).appendChild(fbc);
+
         //- FIXME: Sharing button should be an option
-        document.write('<div class="fb-share-button" data-href="' + document.location.href + '" data-layout="button" data-size="large">Share</div>');
-        document.write('<div class="fb-comments" data-href="' + document.location.href + '" data-width="100%" data-numposts="#{theme.comment.numposts}"></div>');
+        var shareBtn = document.createElement('div');
+        shareBtn.className = 'fb-share-button';
+        shareBtn.setAttribute('data-href', document.location.href);
+        shareBtn.setAttribute('data-layout', 'button');
+        shareBtn.setAttribute('data-size', 'large');
+        shareBtn.textContent = 'Share';
+
+        var commentsDiv = document.createElement('div');
+        commentsDiv.className = 'fb-comments';
+        commentsDiv.setAttribute('data-href', document.location.href);
+        commentsDiv.setAttribute('data-width', '100%');
+        commentsDiv.setAttribute('data-numposts', '#{theme.comment.numposts}');
+
+        var container = document.querySelector('.comments');
+        if (container) {
+            container.appendChild(shareBtn);
+            container.appendChild(commentsDiv);
+        }
     })();
