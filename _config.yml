@@ -32,57 +32,57 @@ footer:
   rss:
     link: '/atom.xml'
     title: RSS
-    icon: fa-rss
+    icon: "fa-solid fa-rss"
     enable: true
   mail:
     link: 'mailto:xuankang.lin@gmail.com'
     title: Email me
-    icon: fa-envelope
+    icon: "fa-solid fa-envelope"
     enable: true
   linkedin:
     link: 'https://www.linkedin.com/in/xuankanglin/'
     title: LinkedIn
-    icon: fa-linkedin
+    icon: "fa-brands fa-linkedin"
     enable: true
   github:
     link: 'https://github.com/XuankangLin'
     title: GitHub
-    icon: fa-github
+    icon: "fa-brands fa-github"
     enable: true
   weibo:
     link: 'https://weibo.com/andriylin/'
     title: Weibo
-    icon: fa-weibo
+    icon: "fa-brands fa-weibo"
     enable: false
   douban:
     link: 'https://www.douban.com/people/andriylin/'
     title: Douban
-    icon: fa-douban
+    icon: "fa-brands fa-douban"
     enable: true
   goodreads:
     link: 'https://www.goodreads.com/xuankanglin'
     title: Goodreads
-    icon: fa-goodreads
+    icon: "fa-brands fa-goodreads"
     enable: true
   facebook:
     link: # your link e.g. https://...
     title: Facebook
-    icon: fa-facebook
+    icon: "fa-brands fa-facebook"
     enable: false
   twitter:
     link: 'https://twitter.com/XuankangLin'
     title: Twitter
-    icon: fa-twitter
+    icon: "fa-brands fa-twitter"
     enable: false
   instagram:
     link: 'https://www.instagram.com/verified_andriy/'
     title: Instagram
-    icon: fa-instagram
+    icon: "fa-brands fa-instagram"
     enable: false
   stackoverflow:
     link: # your link here e.g. http...
     title: StackOverflow
-    icon: fa-stack-overflow
+    icon: "fa-brands fa-stack-overflow"
     enable: false
 
 google_analytics:

@@ -19,7 +19,7 @@ block content
                 - site.tags.map(function(tag) {  
                     if tag.posts.length > 0
                         ul.archive-list
-                            span.fa.fa-tag.listing-seperator(id=tag.name, style="font-size: 1.17em;")
+                            span.fa-solid.fa-tag.listing-seperator(id=tag.name, style="font-size: 1.17em;")
                             span(style="font-size: 1.5em; font-weight: bold; margin-left: 5px;")= tag.name
                             - tag.posts.map(function(post) {
                                 li.col-lg-offset-1.col-md-offset-1
