@@ -22,19 +22,14 @@ block content
                 article.blog-post
                     != page.content
                 nav(aria-label="Post navigation")
-                    ul.pagination.justify-content-between
+                    - var justifyClass = (page.prev && page.next) ? 'justify-content-between' : (page.next ? 'justify-content-end' : 'justify-content-start')
+                    ul.pagination(class=justifyClass)
                         if page.prev
                             li.page-item
                                 a.page-link(href=url_for(page.prev.path), data-toggle="tooltip", data-placement="top", title=page.prev.title)= __('prev_post')
-                        else
-                            li.page-item.disabled
-                                span.page-link &nbsp;
                         if page.next
                             li.page-item
                                 a.page-link(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
-                        else
-                            li.page-item.disabled
-                                span.page-link &nbsp;
 
                 include partial/comment
 
