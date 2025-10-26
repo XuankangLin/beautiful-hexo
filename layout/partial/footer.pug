@@ -7,9 +7,14 @@ footer
                         if item.enable
                             li
                                 a(href=item.link, title=item.title)
+                                    - const iconValue = item.icon || ""
+                                    - const isFontAwesome = iconValue.indexOf('fa-') !== -1
                                     span.fa-stack.fa-lg
                                         i.fa-solid.fa-circle.fa-stack-2x
-                                        i.fa-stack-1x.fa-inverse(class=item.icon)
+                                        if isFontAwesome
+                                            i.fa-stack-1x.fa-inverse(class=iconValue)
+                                        else if iconValue
+                                            img.fa-stack-1x.footer-icon-image(src=url_for(iconValue), alt=item.title)
                 - var year = new Date().getFullYear();
                 p.copyright.text-muted.
                     © #{config.author} • #{year}

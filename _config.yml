@@ -57,7 +57,9 @@ footer:
   douban:
     link: 'https://www.douban.com/people/andriylin/'
     title: Douban
-    icon: "fa-brands fa-douban"
+    # font-awesome still doesn't have douban icon as of v7.0
+    # icon: "fa-brands fa-douban"
+    icon: "img/icons/douban.svg"
     enable: true
   goodreads:
     link: 'https://www.goodreads.com/xuankanglin'
