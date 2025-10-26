@@ -24,6 +24,9 @@ if theme.googlefonts
     each font in theme.googlefonts
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family="+font)
 
+//- JSON-LD Structured Data for SEO
+include structured-data
+
 //- Facebook OpenGraph tags
 //- FIXME: This works only if you are using Facebook comments
 if theme.comment.enable == "facebook"

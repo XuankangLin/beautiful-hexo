@@ -1,0 +1,38 @@
+//- JSON-LD Structured Data for SEO
+if is_post()
+  script(type="application/ld+json").
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "#{page.title}",
+      "name": "#{page.title}",
+      "description": "#{page.description || page.excerpt || config.description}",
+      "url": "#{config.url}#{url_for(page.path)}",
+      "datePublished": "#{page.date ? page.date.toISOString() : ''}",
+      "dateModified": "#{page.updated ? page.updated.toISOString() : page.date.toISOString()}",
+      "author": {
+        "@type": "Person",
+        "name": "#{config.author}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "#{config.author}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "#{config.url}#{url_for(theme.avatar)}"
+        }
+      }
+    }
+else
+  script(type="application/ld+json").
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "#{config.title}",
+      "description": "#{config.description}",
+      "url": "#{config.url}",
+      "author": {
+        "@type": "Person",
+        "name": "#{config.author}"
+      }
+    }
