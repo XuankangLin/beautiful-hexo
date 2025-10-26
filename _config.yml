@@ -89,10 +89,7 @@ footer:
 
 google_analytics:
   enable: true
-  id: UA-42282594-1  ## e.g. UA-1766729-8 your google analytics ID.
-  site: auto ## e.g. yangjian.me your google analytics site or set the value as auto.
-## You MUST upgrade to Universal Analytics first!
-## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+  id: G-C80PC1R3E8
 
 comment:
   # false, disqus, netease or facebook
