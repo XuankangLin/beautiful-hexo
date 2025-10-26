@@ -1,17 +1,13 @@
-nav.navbar.navbar-default.navbar-fixed-top.navbar-custom
+nav.navbar.navbar-expand-md.navbar-light.fixed-top.navbar-custom
     .container-fluid
-        .navbar-header
-            button(class="navbar-toggle", type="button", data-toggle="collapse", data-target="#main-navbar")
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a(class="navbar-brand", href=url_for())= config.fulltitle
+        a(class="navbar-brand", href=url_for())= config.fulltitle
+        button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#main-navbar", aria-controls="main-navbar", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
         #main-navbar.collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right
+            ul.navbar-nav.ml-auto
                 each value, key in theme["navbar-links"]
-                    li
-                        a(href=url_for(value))!= key
+                    li.nav-item
+                        a.nav-link(href=url_for(value))!= key
         .avatar-container
             .avatar-img-border
                 a(href=url_for())

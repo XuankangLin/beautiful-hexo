@@ -8,7 +8,7 @@ block header
         .intro-header.no-img
             .container
                 .row
-                    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                    .col-lg-8.offset-lg-2.col-md-10.offset-md-1
                         .post-heading
                             h1= page.title
                             if page.subtitle
@@ -18,16 +18,23 @@ block header
 block content
     .container
         .row
-            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            .col-lg-8.offset-lg-2.col-md-10.offset-md-1
                 article(role="main", class="blog-post")
                     != page.content
-                ul.pager.blog-pager
-                    if page.prev
-                        li.previous
-                            a(href=url_for(page.prev.path), data-toggle="tooltip", data-placement="top", title=page.prev.title)= __('prev_post')
-                    if page.next
-                        li.next
-                            a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
+                nav(aria-label="Post navigation")
+                    ul.pagination.justify-content-between
+                        if page.prev
+                            li.page-item
+                                a.page-link(href=url_for(page.prev.path), data-toggle="tooltip", data-placement="top", title=page.prev.title)= __('prev_post')
+                        else
+                            li.page-item.disabled
+                                span.page-link &nbsp;
+                        if page.next
+                            li.page-item
+                                a.page-link(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
+                        else
+                            li.page-item.disabled
+                                span.page-link &nbsp;
 
                 include partial/comment
 

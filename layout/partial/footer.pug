@@ -1,11 +1,11 @@
 footer
     .container.beautiful-jekyll-footer
         .row
-            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            .col-lg-8.offset-lg-2.col-md-10.offset-md-1
                 ul.list-inline.text-center.footer-links
                     each item in theme.footer
                         if item.enable
-                            li
+                            li.list-inline-item
                                 a(href=item.link, title=item.title)
                                     - const iconValue = item.icon || ""
                                     - const isFontAwesome = iconValue.indexOf('fa-') !== -1
