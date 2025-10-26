@@ -7,9 +7,9 @@ Beautiful-hexo is a simple elegant hexo theme ported from [Beautiful-jekyll](htt
 ### Install
 
 ```
-hexo init site 
+hexo init site
 cd site
-npm install --save hexo-generator-archive hexo-renderer-jade hexo-generator-tag hexo-generator-feed hexo-generator-sitemap hexo-browsersync 
+npm install --save hexo-generator-archive hexo-renderer-pug hexo-generator-tag hexo-generator-feed hexo-generator-sitemap hexo-browsersync
 git clone --depth 1 https://github.com/twoyao/beautiful-hexo.git themes/beautiful-hexo
 ```
 
