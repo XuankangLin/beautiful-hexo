@@ -6,10 +6,10 @@ footer
                     each item in theme.footer
                         if item.enable
                             li.list-inline-item
-                                a(href=item.link, title=item.title)
+                                a(href=item.link, title=item.title, target="_blank", rel="noopener noreferrer", aria-label=item.title)
                                     - const iconValue = item.icon || ""
                                     - const isFontAwesome = iconValue.indexOf('fa-') !== -1
-                                    span.fa-stack.fa-lg
+                                    span.fa-stack.fa-lg(aria-hidden="true")
                                         i.fa-solid.fa-circle.fa-stack-2x
                                         if isFontAwesome
                                             i.fa-stack-1x.fa-inverse(class=iconValue)

@@ -84,7 +84,6 @@ const main = {
       main.bigImgEl = $("#header-big-imgs");
       main.numImgs = main.bigImgEl.attr("data-num-img");
 
-          // 2fc73a3a967e97599c9763d05e564189
 	  // set an initial image
 	  let imgInfo = main.getImgInfo();
 	  let src = imgInfo.src;
@@ -99,7 +98,6 @@ const main = {
 
 		const prefetchImg = new Image();
   		prefetchImg.src = src;
-		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
   		setTimeout(() => {
                   const img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
@@ -107,13 +105,11 @@ const main = {
   		  setTimeout(() => { img.css("opacity", "1"); }, 50);
 
 		  // after the animation of fading in the new image is done, prefetch the next one
-  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 		  setTimeout(() => {
 		    main.setImg(src, desc);
 			img.remove();
   			getNextImg();
 		  }, 1000);
-  		  //});
   		}, 6000);
   	  };
 
@@ -144,7 +140,5 @@ const main = {
 	}
   }
 };
-
-// 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', main.init);
